@@ -1,5 +1,5 @@
 import { Footer } from './components/footer'
-import { Form } from './components/form'
+import { Form } from './components/formTopic'
 import { Header } from './components/header'
 import { NavBar } from './components/navbar'
 
