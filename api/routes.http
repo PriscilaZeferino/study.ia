@@ -1,0 +1,15 @@
+# @name get-topics
+GET http://localhost:3333/listar/topicos
+
+###
+    
+# @name create-transcription
+
+POST http://localhost:3333/salvar/topico
+Content-Type: application/json
+
+{
+    "topico": "HTML",
+    "descricao": "tags que seguem os principios do HTML semântico",
+    "palavrasChave":"html, html5, html semântico, seo"
+}
