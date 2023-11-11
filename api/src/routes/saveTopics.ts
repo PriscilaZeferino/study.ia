@@ -4,6 +4,7 @@ import { z } from 'zod'
 
 export async function salvarTopicos (app: FastifyInstance) {
   app.post('/salvar/topico', async (req, res) => {
+    
     try {
       const bodySchema = z.object({
         topico: z.string(),
@@ -20,8 +21,7 @@ export async function salvarTopicos (app: FastifyInstance) {
           palavrasChave
         }
       })
-
-      return 'Saved with success'
+      return  res.status(200).send('Dados salvos com sucesso')
     } catch (error) {
       res.status(500).send('Erro ao salvar os dados')
     }

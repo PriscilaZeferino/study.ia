@@ -63,4 +63,5 @@
 .logo {
   font-family: 'Staatliches', sans-serif;
   font-size: 30px;
+  cursor: pointer;
 }
