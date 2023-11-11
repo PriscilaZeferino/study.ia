@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import './index.css'
 import AddTopic from './pages/AddTopic'
+import Detalhes from './pages/Detalhes'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path:'/add/topics',
     element: <AddTopic/>
+  },
+  {
+    path: '/detalhes/:id',
+    element: <Detalhes/>
   }
 ])
 
